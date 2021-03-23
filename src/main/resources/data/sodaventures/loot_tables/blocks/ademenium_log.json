@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "poolademeniumlog",
+      "rolls": 1,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "name": "sodaventures:ademenium_log"
+
+
+
+
+        }
+
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+
+
+
+}
