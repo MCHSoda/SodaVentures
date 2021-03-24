@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "xx ",
+    "xxx",
+    " x "
+  ],
+  "key": {
+    "x": {
+      "item": "sodaventures:ademenium_log"
+
+    }
+
+  },
+  "result": {
+    "item": "sodaventures:pog"
+  }
+}

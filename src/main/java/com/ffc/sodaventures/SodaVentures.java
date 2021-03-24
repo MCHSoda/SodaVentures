@@ -1,7 +1,9 @@
 package com.ffc.sodaventures;
 
+import com.ffc.sodaventures.Items.pog;
 import com.ffc.sodaventures.blocks.AdemeniumLog;
 import com.ffc.sodaventures.blocks.ModBlocks;
+import com.ffc.sodaventures.setup.ModSetup;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -18,7 +20,11 @@ import org.apache.logging.log4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("sodaventures")
 public class SodaVentures {
-    // Directly reference a log4j logger.
+
+    //ide have stroke at this point
+    public static ModSetup setup = new ModSetup();
+
+
     private static final Logger LOGGER = LogManager.getLogger();
 
     public SodaVentures() {
@@ -29,6 +35,8 @@ public class SodaVentures {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+
+        setup.init();
 
 
     }
@@ -54,8 +62,13 @@ public class SodaVentures {
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
 
+           Item.Properties builder =  new Item.Properties()
+                   .group(setup.itemGroup);
+
             event.getRegistry()
-                    .register(new BlockItem(ModBlocks.ADEMENIUMLOG, new Item.Properties()).setRegistryName("ademenium_log"));
+                    .register(new BlockItem(ModBlocks.ADEMENIUMLOG, builder).setRegistryName("ademenium_log"));
+
+            event.getRegistry().register(new pog());
 
         }
     }
