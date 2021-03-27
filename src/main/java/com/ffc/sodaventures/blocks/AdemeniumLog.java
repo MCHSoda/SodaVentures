@@ -12,7 +12,7 @@ public class AdemeniumLog extends Block {
 
         super(Properties.create(Material.WOOD)
                 .lightValue(14)
-                .hardnessAndResistance(10f)
+                .hardnessAndResistance(8.0f)
                 .sound(SoundType.WOOD)
         );
 

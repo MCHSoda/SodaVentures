@@ -1,16 +1,20 @@
 package com.ffc.sodaventures.Items;
 
 import com.ffc.sodaventures.SodaVentures;
+import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemTier;
+import net.minecraftforge.common.ToolType;
 
-public class pog extends Item {
+public class pog extends AxeItem {
+
 
 
     public pog() {
-        super(new Item.Properties()
+        super(ItemTier.DIAMOND, 12.0F, -9.2F ,new Item.Properties()
+
                 .maxStackSize(1)
-                .defaultMaxDamage(9)
-                .maxDamage(15)
                 .group(SodaVentures.setup.itemGroup));
 
         setRegistryName("pog");

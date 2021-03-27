@@ -62,6 +62,7 @@ public class SodaVentures {
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
 
+
            Item.Properties builder =  new Item.Properties()
                    .group(setup.itemGroup);
 
@@ -69,6 +70,10 @@ public class SodaVentures {
                     .register(new BlockItem(ModBlocks.ADEMENIUMLOG, builder).setRegistryName("ademenium_log"));
 
             event.getRegistry().register(new pog());
+
+
+
+
 
         }
     }
