@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "pooltitaniumore",
+      "rolls": 1,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "name": "sodaventures:titanium_shard"
+
+
+
+
+        }
+
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+
+
+
+}

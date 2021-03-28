@@ -1,8 +1,10 @@
 package com.ffc.sodaventures;
 
+import com.ffc.sodaventures.Items.TitaniumShard;
 import com.ffc.sodaventures.Items.pog;
 import com.ffc.sodaventures.blocks.AdemeniumLog;
 import com.ffc.sodaventures.blocks.ModBlocks;
+import com.ffc.sodaventures.blocks.TitaniumOre;
 import com.ffc.sodaventures.setup.ModSetup;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -54,6 +56,7 @@ public class SodaVentures {
 
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> event) {
+            event.getRegistry().register(new TitaniumOre());
 
             event.getRegistry().register(new AdemeniumLog());
 
@@ -67,9 +70,14 @@ public class SodaVentures {
                    .group(setup.itemGroup);
 
             event.getRegistry()
+                    .register(new BlockItem(ModBlocks.TITANIUMORE, builder).setRegistryName("titanium_ore"));
+
+            event.getRegistry()
                     .register(new BlockItem(ModBlocks.ADEMENIUMLOG, builder).setRegistryName("ademenium_log"));
 
             event.getRegistry().register(new pog());
+
+            event.getRegistry().register(new TitaniumShard());
 
 
 

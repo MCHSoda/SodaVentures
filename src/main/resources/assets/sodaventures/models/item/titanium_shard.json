@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "sodaventures:item/sodasword"
+    "layer0": "sodaventures:item/titanium_shard"
   }
 
 }

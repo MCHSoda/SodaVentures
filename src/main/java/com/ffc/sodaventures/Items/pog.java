@@ -3,10 +3,7 @@ package com.ffc.sodaventures.Items;
 import com.ffc.sodaventures.SodaVentures;
 import net.minecraft.item.AxeItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemTier;
-import net.minecraftforge.common.ToolType;
-
 public class pog extends AxeItem {
 
 
